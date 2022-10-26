@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cering/static/css/main.706d45f8.css",
+    "main.js": "/cering/static/js/main.1badff65.js",
+    "index.html": "/cering/index.html",
+    "main.706d45f8.css.map": "/cering/static/css/main.706d45f8.css.map",
+    "main.1badff65.js.map": "/cering/static/js/main.1badff65.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.706d45f8.css",
+    "static/js/main.1badff65.js"
+  ]
+}
