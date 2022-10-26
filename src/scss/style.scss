@@ -1,0 +1,15 @@
+//common
+@import 'common/reset';
+@import 'common/footer';
+@import 'common/layout';
+@import 'common/header';
+
+//main
+@import 'main/content';
+@import 'main/visual';
+
+//sub
+@import 'sub/about';
+@import 'sub/services';
+@import 'sub/project';
+@import 'sub/contact';
