@@ -19,7 +19,7 @@ export default function Visual() {
         </div>
         {/* visual의 이미지 부분 */}
         <div className="img-box">
-          <img src="img/visual.jpg" alt="visual image" />
+          <img src={process.env.PUBLIC_URL + '/img/visual.jpg'} alt="main image" />
         </div>
       </div>
     </figure>

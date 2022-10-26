@@ -2,7 +2,7 @@ import React from "react"
 export default function Content() {
   return (
     <section>
-      <div className="inner">
+      <div className="inner b-line">
         <h2>● ABOUT</h2>
         <div className="about-content">
           <div className="about-content-left">
@@ -17,7 +17,21 @@ export default function Content() {
           </div>
         </div>
         <div className="about-brands-logo">
-          
+          <div className="wrap-logo">
+            <img src="https://img.icons8.com/windows/100/000000/wix.png"/>
+          </div>
+          <div className="wrap-logo">
+          <img src="https://img.icons8.com/dotty/100/000000/yolo.png"/>
+          </div>
+          <div className="wrap-logo">
+            <img src="https://img.icons8.com/windows/100/000000/ember.png"/>
+          </div>
+          <div className="wrap-logo">
+            <img src="https://img.icons8.com/ios/100/000000/audible.png"/>
+          </div>
+          <div className="wrap-logo">
+            <img src="https://img.icons8.com/ios-filled/100/000000/the-beatles.png"/>
+          </div>
         </div>
       </div>
     </section>

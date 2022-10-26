@@ -12,6 +12,7 @@ section {
     .about-content {
       display: flex;
       justify-content: space-between;
+      padding-bottom: 100px;
       .about-content-left {
         display: flex;
         flex: 1;
@@ -45,7 +46,15 @@ section {
     }
     .about-brands-logo {
       display: flex;
-      padding: 100px 0;
+      padding: 100px 20px;
+      justify-content:space-between;
     }
+    // 브랜드 로고 사이 구분선
+    // &::after {
+    //   display: block;
+    //   content: '';
+    //   border-bottom: 1px solid #000;
+    //   width: 100%; height: 1px;
+    // }
   }
 }
