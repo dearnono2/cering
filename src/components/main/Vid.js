@@ -51,7 +51,7 @@ export default function Vid() {
           </div>
         </div>
         <div className="video-container">
-          <div>video section</div>
+          <div>video section (youtube video)</div>
         </div>
       </div>
     </section>
