@@ -6,6 +6,7 @@ export default function Project() {
     <section>
       <div className="inner">
         <h1>Project</h1>
+        {/* 이곳에 flickr 넣을 예정. */}
       </div>
     </section>
   )

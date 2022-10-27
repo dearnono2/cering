@@ -1,5 +1,26 @@
-import React from "react"
+// import React from "react"
+import axios from "axios";
+import { useEffect, useState } from "react";
+// font awesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' 
+import { faFacebookF, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+
+
 export default function About() {
+  // 기업 멤버들 정보 불러오기
+  const path = process.env.PUBLIC_URL;
+  const [Members, setMembers] = useState([]);
+
+  useEffect(() => {
+      axios.get(`${path}/DB/members.json`).then((json) => {
+          setMembers(json.data.members);
+      })
+  }, []);
+
+  useEffect(() => {
+      console.log(Members);
+  }, [Members]);
+
   return (
     // 최상단 영역
     <>
@@ -28,9 +49,54 @@ export default function About() {
               </div>
             </div>
         </div>
+        {/* simple introduce boxes */}
+        <div className="simple-about-box">
+          <div className="simple-box">
+            <p>200</p>
+            <p>VISUALISATION</p>
+          </div>
+          <div className="simple-box">
+            <p>7</p>
+            <p>YEARS EXPERIENCE</p>
+          </div>
+          <div className="simple-box">
+            <p>32</p>
+            <p>AWWARDS</p>
+          </div>
+          <div className="simple-box">
+            <p>16</p>
+            <p>PHOTOGRAPHERS</p>
+          </div>
+        </div>
       </section>
       {/* team 영역 */}
-      <section id="team"></section>
+      <section id="team">
+        <div className="inner">
+          <h2>● team</h2>
+          {/* 부서 멤버들의 정보를 받아옴. */}
+          <div className="department">
+            {Members.map((data, index) => {
+                return (
+                  <article key={index}>
+                      <div className="wrap-members">
+                          <div className="pic">
+                              <img src={`${path}/img/${data.pic}`} alt={data.name} />
+                          </div>
+                          <div className="wrap-members-text">
+                            <h3>{data.name}</h3>
+                            <div className="wrap-icon">
+                              <a href="#"><FontAwesomeIcon icon={faFacebookF} className="font-awesome" /></a>
+                              <a href="#"><FontAwesomeIcon icon={faTwitter} className="font-awesome" /></a>
+                              <a href="#"><FontAwesomeIcon icon={faInstagram} className="font-awesome" /></a>
+                            </div>
+                          </div>
+                      </div>
+                  </article>
+                );
+              })}
+          </div>
+        </div>
+      </section>
     </>
   )
 }

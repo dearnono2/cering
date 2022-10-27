@@ -61,4 +61,90 @@
       }
     }
   }
+  .simple-about-box {
+    width: 100%; height: 300px;
+    background: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    .simple-box {
+      flex: 1;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 100px;
+      p {
+        font-weight: bold;
+        &:nth-of-type(1) {
+          font-size: 50px;
+        }
+      }
+      &:nth-of-type(odd) {
+        background: #222;
+        color: #ddd;
+      }
+      &:nth-of-type(even) {
+        background: #fff;
+      }
+    }
+  }
+}
+
+#team {
+  width: 100%;
+  padding-bottom: 100px;
+  .inner {
+    h2 {
+      font-size: 20px;
+    }
+    .department {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      article {
+        width: 33.3333%;
+        padding: 30px;
+        margin-bottom: 50px;
+        .wrap-members {
+          width: 100%;
+          .pic {
+            width: 100%;
+            height: 300px;
+            background: #111;
+            margin-bottom: 20px;
+            filter: saturate(0.2);
+            transition: 0.5s;
+            &:hover {
+              filter: saturate(1.1);
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .wrap-members-text {
+            display: flex;
+            justify-content: space-between;
+            h3 {
+              font-size: 20px;
+            }
+            .wrap-icon {
+              a {
+                .font-awesome {
+                  padding-left: 12px;
+                  color: #000;
+                  &:hover {
+                    color: #A7774B;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

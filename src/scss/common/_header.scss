@@ -22,11 +22,15 @@ header {
 			right: 0px;
 			li {
 				float: left;
+				transition: 0.3s;
 				a {
 					display: inline-block;
 					padding: 30px 30px;
 					font: bold 14px/1 'arial';
 					color: #000;
+				}
+				&:hover {
+					transform: scale(1.2) rotate(10deg);
 				}
 			}
 		}

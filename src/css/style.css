@@ -101,12 +101,16 @@ header .inner #gnb {
 }
 header .inner #gnb li {
   float: left;
+  transition: 0.3s;
 }
 header .inner #gnb li a {
   display: inline-block;
   padding: 30px 30px;
   font: bold 14px/1 "arial";
   color: #000;
+}
+header .inner #gnb li:hover {
+  transform: scale(1.2) rotate(10deg);
 }
 
 section {
@@ -358,6 +362,127 @@ section .inner .service-container .icon-box p:nth-of-type(2) {
   height: 30px;
   font-size: 10px;
   border-radius: 14px;
+}
+#about .simple-about-box {
+  width: 100%;
+  height: 300px;
+  background: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+#about .simple-about-box .simple-box {
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+#about .simple-about-box .simple-box p {
+  font-weight: bold;
+}
+#about .simple-about-box .simple-box p:nth-of-type(1) {
+  font-size: 50px;
+}
+#about .simple-about-box .simple-box:nth-of-type(odd) {
+  background: #222;
+  color: #ddd;
+}
+#about .simple-about-box .simple-box:nth-of-type(even) {
+  background: #fff;
+}
+
+#team {
+  width: 100%;
+  padding-bottom: 100px;
+}
+#team .inner h2 {
+  font-size: 20px;
+}
+#team .inner .department {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#team .inner .department article {
+  width: 33.3333%;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+#team .inner .department article .wrap-members {
+  width: 100%;
+}
+#team .inner .department article .wrap-members .pic {
+  width: 100%;
+  height: 300px;
+  background: #111;
+  margin-bottom: 20px;
+  filter: saturate(0.2);
+  transition: 0.5s;
+}
+#team .inner .department article .wrap-members .pic:hover {
+  filter: saturate(1.1);
+}
+#team .inner .department article .wrap-members .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#team .inner .department article .wrap-members .wrap-members-text {
+  display: flex;
+  justify-content: space-between;
+}
+#team .inner .department article .wrap-members .wrap-members-text h3 {
+  font-size: 20px;
+}
+#team .inner .department article .wrap-members .wrap-members-text .wrap-icon a .font-awesome {
+  padding-left: 12px;
+  color: #000;
+}
+#team .inner .department article .wrap-members .wrap-members-text .wrap-icon a .font-awesome:hover {
+  color: #A7774B;
+}
+
+section .inner h2 {
+  font-size: 30px;
+}
+section .inner #map {
+  width: 100%;
+  height: 500px;
+  background: #000;
+}
+section .inner .btnSet {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+section .inner .btnSet button {
+  cursor: pointer;
+  height: 30px;
+  border: 1px solid #888;
+  padding: 5px 20px;
+}
+section .inner .btnSet ul {
+  display: flex;
+}
+section .inner .btnSet ul li {
+  border: 1px solid #888;
+  height: 30px;
+  padding: 0 20px;
+  line-height: 30px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+section .inner .btnSet ul li.on {
+  background: #333;
+  border: 1px solid #333;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
